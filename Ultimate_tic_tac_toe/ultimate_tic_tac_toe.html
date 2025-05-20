@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "ultimate_tic_tac_toe_style.css">
+</head>
+<body>
+    <h1>Ultimate Tic Tac Toe</h1>
+    <h2>main board results</h2>
+    <div id="templates" style="display: none;">
+        <span id="X" class="player-X" data-value="X">X</span>
+        <span id="O" class="player-O" data-value="O">O</span>
+    </div>
+    <div class="showBoard" id="showBoard">
+        <div class="cell" id="resultsCell0"></div>
+        <div class="cell" id="resultsCell1"></div>
+        <div class="cell" id="resultsCell2"></div>
+        <div class="cell" id="resultsCell3"></div>
+        <div class="cell" id="resultsCell4"></div>
+        <div class="cell" id="resultsCell5"></div>
+        <div class="cell" id="resultsCell6"></div>
+        <div class="cell" id="resultsCell7"></div>
+        <div class="cell" id="resultsCell8"></div>
+    </div>
+    <p id="status"></p>
+    <div class="mainBoard" id="mainBoard">
+        <div class="sectorBoard" id="sectorBoard0">
+            <div class="cell" id="cell0_0"></div>
+            <div class="cell" id="cell0_1"></div>
+            <div class="cell" id="cell0_2"></div>
+            <div class="cell" id="cell0_3"></div>
+            <div class="cell" id="cell0_4"></div>
+            <div class="cell" id="cell0_5"></div>
+            <div class="cell" id="cell0_6"></div>
+            <div class="cell" id="cell0_7"></div>
+            <div class="cell" id="cell0_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard1">
+            <div class="cell" id="cell1_0"></div>
+            <div class="cell" id="cell1_1"></div>
+            <div class="cell" id="cell1_2"></div>
+            <div class="cell" id="cell1_3"></div>
+            <div class="cell" id="cell1_4"></div>
+            <div class="cell" id="cell1_5"></div>
+            <div class="cell" id="cell1_6"></div>
+            <div class="cell" id="cell1_7"></div>
+            <div class="cell" id="cell1_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard2">
+            <div class="cell" id="cell2_0"></div>
+            <div class="cell" id="cell2_1"></div>
+            <div class="cell" id="cell2_2"></div>
+            <div class="cell" id="cell2_3"></div>
+            <div class="cell" id="cell2_4"></div>
+            <div class="cell" id="cell2_5"></div>
+            <div class="cell" id="cell2_6"></div>
+            <div class="cell" id="cell2_7"></div>
+            <div class="cell" id="cell2_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard3">
+            <div class="cell" id="cell3_0"></div>
+            <div class="cell" id="cell3_1"></div>
+            <div class="cell" id="cell3_2"></div>
+            <div class="cell" id="cell3_3"></div>
+            <div class="cell" id="cell3_4"></div>
+            <div class="cell" id="cell3_5"></div>
+            <div class="cell" id="cell3_6"></div>
+            <div class="cell" id="cell3_7"></div>
+            <div class="cell" id="cell3_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard4">
+            <div class="cell" id="cell4_0"></div>
+            <div class="cell" id="cell4_1"></div>
+            <div class="cell" id="cell4_2"></div>
+            <div class="cell" id="cell4_3"></div>
+            <div class="cell" id="cell4_4"></div>
+            <div class="cell" id="cell4_5"></div>
+            <div class="cell" id="cell4_6"></div>
+            <div class="cell" id="cell4_7"></div>
+            <div class="cell" id="cell4_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard5">
+            <div class="cell" id="cell5_0"></div>
+            <div class="cell" id="cell5_1"></div>
+            <div class="cell" id="cell5_2"></div>
+            <div class="cell" id="cell5_3"></div>
+            <div class="cell" id="cell5_4"></div>
+            <div class="cell" id="cell5_5"></div>
+            <div class="cell" id="cell5_6"></div>
+            <div class="cell" id="cell5_7"></div>
+            <div class="cell" id="cell5_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard6">
+            <div class="cell" id="cell6_0"></div>
+            <div class="cell" id="cell6_1"></div>
+            <div class="cell" id="cell6_2"></div>
+            <div class="cell" id="cell6_3"></div>
+            <div class="cell" id="cell6_4"></div>
+            <div class="cell" id="cell6_5"></div>
+            <div class="cell" id="cell6_6"></div>
+            <div class="cell" id="cell6_7"></div>
+            <div class="cell" id="cell6_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard7">
+            <div class="cell" id="cell7_0"></div>
+            <div class="cell" id="cell7_1"></div>
+            <div class="cell" id="cell7_2"></div>
+            <div class="cell" id="cell7_3"></div>
+            <div class="cell" id="cell7_4"></div>
+            <div class="cell" id="cell7_5"></div>
+            <div class="cell" id="cell7_6"></div>
+            <div class="cell" id="cell7_7"></div>
+            <div class="cell" id="cell7_8"></div>
+        </div>
+        <div class="sectorBoard" id="sectorBoard8">
+            <div class="cell" id="cell8_0"></div>
+            <div class="cell" id="cell8_1"></div>
+            <div class="cell" id="cell8_2"></div>
+            <div class="cell" id="cell8_3"></div>
+            <div class="cell" id="cell8_4"></div>
+            <div class="cell" id="cell8_5"></div>
+            <div class="cell" id="cell8_6"></div>
+            <div class="cell" id="cell8_7"></div>
+            <div class="cell" id="cell8_8"></div>
+        </div>
+
+
+    </div>
+
+
+    <script src = "ultimate_tic_tac_toe.js"></script>
+</body>
+</html>
